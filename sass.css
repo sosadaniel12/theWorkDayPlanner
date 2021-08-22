@@ -1,0 +1,43 @@
+body {
+    background-color: rgba(14, 161, 161, 0.747);
+}
+
+
+.hstack {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: stretch;
+    height: 5em;
+    margin: 1.5rem;
+  }
+  
+  .vstack {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-self: stretch;
+  }
+
+ .form-control {
+     height: 8em;
+  }
+
+.form-control:hover {
+    border: black solid 3px;
+    cursor: pointer;;
+}
+
+  .button, .btn {
+      background-color:gray;
+      color: white;
+      border: gray solid 3px;
+      width: 8rem;
+      height: 3rem;
+  }
+
+  .time {
+      display: block;
+      justify-content: center;
+      margin-bottom: 10rem;
+  }
