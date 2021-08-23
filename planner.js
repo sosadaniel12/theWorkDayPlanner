@@ -1,5 +1,9 @@
+const moment = require("moment.js");
+var time = document.querySelector('.time');
 // when the planner opens the current day and time will be displayed at the top of the page
-
+moment().format();
+moment.duration().days();
+moment.duration().asDays();
 //when the user scrolls down event block will appear from a 8 hour shift
 
 // if an event block has already passed the current time it will change the block to a red color\

@@ -41,3 +41,15 @@ body {
       justify-content: center;
       margin-bottom: 10rem;
   }
+
+  .workTime {
+      color: black;
+      border-right: 5rem;
+      background-color: lightgray;
+      border: white solid 3px;
+      padding: 2rem;
+      font-weight: bold;
+      width: 10rem;
+      height: 6.5rem;
+      text-align: center;
+  }
