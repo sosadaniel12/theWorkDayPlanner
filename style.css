@@ -96,8 +96,8 @@ body {
   }
   
   .form-control:hover {
-    border: black solid 3px;
-    cursor: pointer;;
+    border: black solid 6px;
+    cursor: pointer;
   }
   
   .button, .btn {
@@ -115,12 +115,13 @@ body {
       background-color: lightgray;
       border: white solid 3px;
       border-radius: 5px;
-      padding: 2rem;
-      margin-right: 1rem;
+      padding-top: 3rem;
+      margin-right: .3rem;
       margin-left: -1.5rem;
+      margin-top: 1rem;
       font-weight: bold;
       width: 8rem;
-      height: 6rem;
+      height: 8rem;
       text-align: center;
       
   }
