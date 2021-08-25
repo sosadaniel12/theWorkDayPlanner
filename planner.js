@@ -1,7 +1,8 @@
-var todayDate = moment();
-// when the planner opens the current day and time will be displayed at the top of the page
+var todayDate = moment().format("MMMM DD YYYY, h:mm:ss a");
+console.log(todayDate);
+$("#currentDay").text(todayDate);
 
-$('#currentDay').text(todayDate);
+// when the planner opens the current day and time will be displayed at the top of the page
 
 //when the user scrolls down event block will appear from a 8 hour shift
 
