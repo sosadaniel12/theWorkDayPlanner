@@ -1,13 +1,29 @@
-var todayDate = moment().format("MMMM DD YYYY, h:mm:ss a");
-console.log(todayDate);
-$("#currentDay").text(todayDate);
-
 // when the planner opens the current day and time will be displayed at the top of the page
 
-//when the user scrolls down event block will appear from a 8 hour shift
+var datetime = null,
+  date = null;
+
+var update = function () {
+  date = moment(new Date());
+  datetime.html(date.format("dddd, MMMM Do YYYY, h:mm:ss a"));
+};
+
+$(document).ready(function () {
+  datetime = $("#currentDay");
+  update();
+  setInterval(update, 1000);
+});
 
 // if an event block has already passed the current time it will change the block to a red color\
+$(document).each(function () {
+  workTime = $("#workTime");
+  console.log(workTime);
+});
 
+function pastTime() {
+  if (workTime < datetime) {
+  }
+}
 // if an event block is in the range of the current time it will be a neutral color
 
 // if an event block is out of the range of the current time in the future it will turn into a light blue color
