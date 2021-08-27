@@ -15,9 +15,10 @@ $(document).ready(function () {
 });
 
 // if an event block has already passed the current time it will change the block to a red color\
+$("#workTime").val();
+
 $(document).each(function () {
   workTime = $("#workTime");
-  console.log(workTime);
 });
 
 function pastTime() {

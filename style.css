@@ -2,7 +2,9 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
-  background-color: rgba(14, 161, 161, 0.747);
+  background: #000046;
+  background: -webkit-linear-gradient(to right, #1cb5e0, #000046);
+  background: linear-gradient(to right, #1cb5e0, #000046);
 }
 
 textarea {
@@ -16,7 +18,10 @@ textarea {
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background: #2193b0;
+  background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+
   color: black;
   border-radius: 0;
   border-bottom: 10px solid rgb(43, 37, 37);
