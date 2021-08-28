@@ -78,7 +78,7 @@ $("submit10").on("click", function () {
   localStorage.text17 = $("#text17").val();
 });
 
-if (moment().hour() == 8 || moment().hour() == 9) {
+if (moment().hour() == 8 ) {
   $("#text8").attr("style", "background color: red;");
 }
 
@@ -136,4 +136,69 @@ if (moment().hour() > 12) {
 
 if (moment().hour() < 12) {
   $("#text12").attr("style", "background-color: yellow;");
+}
+
+
+if (moment().hour() == 13) {
+  $("#text13").attr("style", "background color: red;");
+}
+
+if (moment().hour() > 13) {
+  $("#text13").attr("style", "background-color: blue;");
+}
+
+if (moment().hour() < 13) {
+  $("#text13").attr("style", "background-color: yellow;");
+}
+
+
+if (moment().hour() == 14) {
+  $("#text14").attr("style", "background color: red;");
+}
+
+if (moment().hour() > 14) {
+  $("#text14").attr("style", "background-color: blue;");
+}
+
+if (moment().hour() < 14) {
+  $("#text14").attr("style", "background-color: yellow;");
+}
+
+
+if (moment().hour() == 15) {
+  $("#text15").attr("style", "background color: red;");
+}
+
+if (moment().hour() > 15) {
+  $("#text15").attr("style", "background-color: blue;");
+}
+
+if (moment().hour() < 15) {
+  $("#text15").attr("style", "background-color: yellow;");
+}
+
+
+if (moment().hour() == 16) {
+  $("#text16").attr("style", "background color: red;");
+}
+
+if (moment().hour() > 16) {
+  $("#text16").attr("style", "background-color: blue;");
+}
+
+if (moment().hour() < 16) {
+  $("#text16").attr("style", "background-color: yellow;");
+}
+
+
+if (moment().hour() == 17) {
+  $("#text17").attr("style", "background color: red;");
+}
+
+if (moment().hour() > 17) {
+  $("#text17").attr("style", "background-color: blue;");
+}
+
+if (moment().hour() < 17) {
+  $("#text17").attr("style", "background-color: yellow;");
 }
