@@ -93,7 +93,7 @@ textarea {
 }
 
 .btn:hover {
-  background-color: rgb(144, 144, 70);
+  background-color: rgb(29, 29, 29);
   border: gray groove 3px;
 }
 
@@ -117,4 +117,22 @@ textarea {
   font-size: 2em;
   font-weight: bold;
   margin-top: 2rem;
+}
+
+.form-control::placeholder {
+  color: black;
+}
+
+#buttonReset {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.resetbtn {
+  background-color: red;
+  margin-bottom: 3rem;
+  margin-top: -0.5rem;
+  height: 5rem;
+  width: 25%;
 }

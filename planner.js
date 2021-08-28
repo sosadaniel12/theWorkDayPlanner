@@ -4,13 +4,17 @@ var update = function () {
   date = moment(new Date());
   datetime.text(date.format("dddd, MMMM Do YYYY, h:mm:ss a"));
 };
-
+//when the reset button is clicked it will clear the form and make it blank again
 $(document).ready(function () {
   datetime = $("#currentDay");
   update();
   setInterval(update, 1000);
 });
 
+$("#buttonReset").click(function () {
+  $("input").val("");
+  localStorage.clear();
+});
 //when the submit button is clicked
 //if the current time is equal to 8 it will change color green
 //if the current time is less than 8 it will change color to red
@@ -19,13 +23,17 @@ $("#submit1").on("click", function () {
   localStorage.text8 = $("#text8").val();
 });
 if (moment().hour() == 8) {
-  $("#text8").attr("style", "background-color: lightgreen");
+  $("#text8").attr("style", "background-color: lightgreen", "color: black");
 }
 if (moment().hour() < 8) {
-  $("#text8").attr("style", "background-color: lightblue");
+  $("#text8").attr("style", "background-color: lightblue", "color: black");
 }
 if (moment().hour() > 8) {
-  $("#text8").attr("style", "background-color: rgb(255, 74, 74)");
+  $("#text8").attr(
+    "style",
+    "background-color: rgb(255, 74, 74)",
+    "color: black"
+  );
 }
 
 //when the submit button is clicked
@@ -181,7 +189,7 @@ if (moment().hour() > 17) {
   $("#text17").attr("style", "background-color: rgb(255, 74, 74)");
 }
 
-// setting the values into the local storage
+//Putting the values into the local storage
 $("#text8").val(localStorage.text8);
 $("#text9").val(localStorage.text9);
 $("#text10").val(localStorage.text10);
