@@ -1,11 +1,8 @@
 // when the planner opens the current day and time will be displayed at the top of the page
 
-var datetime = null,
-  date = null;
-
 var update = function () {
   date = moment(new Date());
-  datetime.html(date.format("dddd, MMMM Do YYYY, h:mm:ss a"));
+  datetime.text(date.format("dddd, MMMM Do YYYY, h:mm:ss a"));
 };
 
 $(document).ready(function () {
@@ -14,17 +11,177 @@ $(document).ready(function () {
   setInterval(update, 1000);
 });
 
-// if an event block has already passed the current time it will change the block to a red color\
+//when the submit button is clicked
+//if the current time is equal to 8 it will change color green
+//if the current time is less than 8 it will change color to red
+//if the current time is greater than 8 it will change the color to blue
+$("#submit1").on("click", function () {
+  localStorage.text8 = $("#text8").val();
+});
+if (moment().hour() == 8) {
+  $("#text8").attr("style", "background-color: lightgreen");
+}
+if (moment().hour() < 8) {
+  $("#text8").attr("style", "background-color: lightblue");
+}
+if (moment().hour() > 8) {
+  $("#text8").attr("style", "background-color: rgb(255, 74, 74)");
+}
 
-// if an event block is in the range of the current time it will be a neutral color
+//when the submit button is clicked
+//if the current time is equal to 9 it will change color green
+//if the current time is less than 9 it will change color to red
+//if the current time is greater than 9 it will change the color to blue
+$("#submit2").on("click", function () {
+  localStorage.text9 = $("#text9").val();
+});
+if (moment().hour() == 9) {
+  $("#text9").attr("style", "background-color: lightgreen");
+}
+if (moment().hour() < 9) {
+  $("#text9").attr("style", "background-color: lightblue");
+}
+if (moment().hour() > 9) {
+  $("#text9").attr("style", "background-color: rgb(255, 74, 74)");
+}
 
-// if an event block is out of the range of the current time in the future it will turn into a light blue color
+//when the submit button is clicked
+//if the current time is equal to 10 it will change color green
+//if the current time is less than 10 it will change color to red
+//if the current time is greater than 10 it will change the color to blue
+$("#submit3").on("click", function () {
+  localStorage.text10 = $("#text10").val();
+});
+if (moment().hour() == 10) {
+  $("#text10").attr("style", "background-color: lightgreen");
+}
+if (moment().hour() < 10) {
+  $("#text10").attr("style", "background-color: lightblue");
+}
+if (moment().hour() > 10) {
+  $("#text10").attr("style", "background-color: rgb(255, 74, 74)");
+}
 
-//when the input of an event block is saved it will then be saved into the local storage
+//when the submit button is clicked
+//if the current time is equal to 11 it will change color green
+//if the current time is less than 11 it will change color to red
+//if the current time is greater than 11 it will change the color to blue
+$("#submit4").on("click", function () {
+  localStorage.text11 = $("#text11").val();
+});
+if (moment().hour() == 11) {
+  $("#text11").attr("style", "background-color: lightgreen");
+}
+if (moment().hour() < 11) {
+  $("#text11").attr("style", "background-color: lightblue");
+}
+if (moment().hour() > 11) {
+  $("#text11").attr("style", "background-color: rgb(255, 74, 74)");
+}
 
-//when and if the page refreshed the event block will still have the same text inputed unless it is resetted
+//when the submit button is clicked
+//if the current time is equal to 12 it will change color green
+//if the current time is less than 12 it will change color to red
+//if the current time is greater than 12 it will change the color to blue
+$("#submit5").on("click", function () {
+  localStorage.text12 = $("#text12").val();
+});
+if (moment().hour() == 12) {
+  $("#text12").attr("style", "background-color: lightgreen");
+}
+if (moment().hour() < 12) {
+  $("#text12").attr("style", "background-color: lightblue");
+}
+if (moment().hour() > 12) {
+  $("#text12").attr("style", "background-color: rgb(255, 74, 74)");
+}
 
-//setting values to local storage
+//when the submit button is clicked
+//if the current time is equal to 13 it will change color green
+//if the current time is less than 13 it will change color to red
+//if the current time is greater than 13 it will change the color to blue
+$("#submit6").on("click", function () {
+  localStorage.text13 = $("#text13").val();
+});
+if (moment().hour() == 13) {
+  $("#text13").attr("style", "background-color: lightgreen");
+}
+if (moment().hour() < 13) {
+  $("#text13").attr("style", "background-color: lightblue");
+}
+if (moment().hour() > 13) {
+  $("#text13").attr("style", "background-color: rgb(255, 74, 74)");
+}
+
+//when the submit button is clicked
+//if the current time is equal to 14 it will change color green
+//if the current time is less than 14 it will change color to red
+//if the current time is greater than 14 it will change the color to blue
+$("#submit7").on("click", function () {
+  localStorage.text14 = $("#text14").val();
+});
+if (moment().hour() == 14) {
+  $("#text14").attr("style", "background-color: lightgreen");
+}
+if (moment().hour() < 14) {
+  $("#text14").attr("style", "background-color: lightblue");
+}
+if (moment().hour() > 14) {
+  $("#text14").attr("style", "background-color: rgb(255, 74, 74)");
+}
+
+//when the submit button is clicked
+//if the current time is equal to 15 it will change color green
+//if the current time is less than 15 it will change color to red
+//if the current time is greater than 15 it will change the color to blue
+$("#submit8").on("click", function () {
+  localStorage.text15 = $("#text15").val();
+});
+if (moment().hour() == 15) {
+  $("#text15").attr("style", "background-color: lightgreen");
+}
+if (moment().hour() < 15) {
+  $("#text15").attr("style", "background-color: lightblue");
+}
+if (moment().hour() > 15) {
+  $("#text15").attr("style", "background-color: rgb(255, 74, 74)");
+}
+
+//when the submit button is clicked
+//if the current time is equal to 16 it will change color green
+//if the current time is less than 16 it will change color to red
+//if the current time is greater than 16 it will change the color to blue
+$("#submit9").on("click", function () {
+  localStorage.text16 = $("#text16").val();
+});
+if (moment().hour() == 16) {
+  $("#text16").attr("style", "background-color: lightgreen");
+}
+if (moment().hour() < 16) {
+  $("#text16").attr("style", "background-color: lightblue");
+}
+if (moment().hour() > 16) {
+  $("#text16").attr("style", "background-color: rgb(255, 74, 74)");
+}
+
+//when the submit button is clicked
+//if the current time is equal to 17 it will change color green
+//if the current time is less than 17 it will change color to red
+//if the current time is greater than 17 it will change the color to blue
+$("#submit10").on("click", function () {
+  localStorage.text17 = $("#text17").val();
+});
+if (moment().hour() == 17) {
+  $("#text17").attr("style", "background-color: lightgreen");
+}
+if (moment().hour() < 17) {
+  $("#text17").attr("style", "background-color: lightblue");
+}
+if (moment().hour() > 17) {
+  $("#text17").attr("style", "background-color: rgb(255, 74, 74)");
+}
+
+// setting the values into the local storage
 $("#text8").val(localStorage.text8);
 $("#text9").val(localStorage.text9);
 $("#text10").val(localStorage.text10);
@@ -35,170 +192,3 @@ $("#text14").val(localStorage.text14);
 $("#text15").val(localStorage.text15);
 $("#text16").val(localStorage.text16);
 $("#text17").val(localStorage.text17);
-
-//saving input values
-
-$("#submit1").on("click", function () {
-  localStorage.text8 = $("#text8").val();
-});
-
-$("#submit2").on("click", function () {
-  localStorage.text9 = $("#text9").val();
-});
-
-$("submit3").on("click", function () {
-  localStorage.text10 = $("#text10").val();
-});
-
-$("submit4").on("click", function () {
-  localStorage.text11 = $("#text11").val();
-});
-
-$("submit5").on("click", function () {
-  localStorage.text12 = $("#text12").val();
-});
-
-$("submit6").on("click", function () {
-  localStorage.text13 = $("#text13").val();
-});
-
-$("submit7").on("click", function () {
-  localStorage.text14 = $("#text14").val();
-});
-
-$("submit8").on("click", function () {
-  localStorage.text15 = $("#text15").val();
-});
-
-$("submit9").on("click", function () {
-  localStorage.text16 = $("#text16").val();
-});
-
-$("submit10").on("click", function () {
-  localStorage.text17 = $("#text17").val();
-});
-
-if (moment().hour() == 8 ) {
-  $("#text8").attr("style", "background color: red;");
-}
-
-if (moment().hour() > 8) {
-  $("#text8").attr("style", "background-color: blue;");
-}
-
-if (moment().hour() < 8) {
-  $("#text8").attr("style", "background-color: yellow;");
-}
-
-if (moment().hour() == 9) {
-  $("#text9").attr("style", "background color: red;");
-}
-
-if (moment().hour() > 9) {
-  $("#text9").attr("style", "background-color: blue;");
-}
-
-if (moment().hour() < 9) {
-  $("#text9").attr("style", "background-color: yellow;");
-}
-
-if (moment().hour() == 10) {
-  $("#text10").attr("style", "background color: red;");
-}
-
-if (moment().hour() > 10) {
-  $("#text10").attr("style", "background-color: blue;");
-}
-
-if (moment().hour() < 10) {
-  $("#text10").attr("style", "background-color: yellow;");
-}
-
-if (moment().hour() == 11) {
-  $("#text11").attr("style", "background color: red;");
-}
-
-if (moment().hour() > 11) {
-  $("#text11").attr("style", "background-color: blue;");
-}
-
-if (moment().hour() < 11) {
-  $("#text11").attr("style", "background-color: yellow;");
-}
-
-if (moment().hour() == 12) {
-  $("#text12").attr("style", "background color: red;");
-}
-
-if (moment().hour() > 12) {
-  $("#text12").attr("style", "background-color: blue;");
-}
-
-if (moment().hour() < 12) {
-  $("#text12").attr("style", "background-color: yellow;");
-}
-
-
-if (moment().hour() == 13) {
-  $("#text13").attr("style", "background color: red;");
-}
-
-if (moment().hour() > 13) {
-  $("#text13").attr("style", "background-color: blue;");
-}
-
-if (moment().hour() < 13) {
-  $("#text13").attr("style", "background-color: yellow;");
-}
-
-
-if (moment().hour() == 14) {
-  $("#text14").attr("style", "background color: red;");
-}
-
-if (moment().hour() > 14) {
-  $("#text14").attr("style", "background-color: blue;");
-}
-
-if (moment().hour() < 14) {
-  $("#text14").attr("style", "background-color: yellow;");
-}
-
-
-if (moment().hour() == 15) {
-  $("#text15").attr("style", "background color: red;");
-}
-
-if (moment().hour() > 15) {
-  $("#text15").attr("style", "background-color: blue;");
-}
-
-if (moment().hour() < 15) {
-  $("#text15").attr("style", "background-color: yellow;");
-}
-
-
-if (moment().hour() == 16) {
-  $("#text16").attr("style", "background color: red;");
-}
-
-if (moment().hour() > 16) {
-  $("#text16").attr("style", "background-color: blue;");
-}
-
-if (moment().hour() < 16) {
-  $("#text16").attr("style", "background-color: yellow;");
-}
-
-
-if (moment().hour() == 17) {
-  $("#text17").attr("style", "background color: red;");
-}
-
-if (moment().hour() > 17) {
-  $("#text17").attr("style", "background-color: blue;");
-}
-
-if (moment().hour() < 17) {
-  $("#text17").attr("style", "background-color: yellow;");
-}
