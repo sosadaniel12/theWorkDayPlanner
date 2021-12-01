@@ -52,7 +52,7 @@ Daniel Sosa
 
 None
 
-##Deployment
+## Deployment
 
 https://sosadaniel12.github.io/theWorkDayPlanner/
 
