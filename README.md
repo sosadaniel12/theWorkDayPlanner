@@ -1,9 +1,73 @@
-# theWorkDayPlanner
+# The Work Day Planner
 
-I will be building a work day planner using HTML, CSS, Bootstrap, JavaScript, JQuery and and Moment.js. By building this application, I will have an understanding in using third-party Web API's. I will also be able to use this planner in my daily routine for work, to be able to schedule all the events throughout the day.
+![PyPi license](https://badgen.net/pypi/license/pip/)
 
-Color Code: Green = Current Time
-Color Code: Red = Past Time
-Color Code: Blue = Future Time
+## Description
 
-https://drive.google.com/file/d/1vBLodggbHJtHQAeNz7zbFCdWCx2z_Lcv/view
+this application is used to organize a daily work day into time blocks
+
+## Table of Contents
+
+[Description](#description)
+
+[Installation](#installation)
+
+[Usage](#usage)
+
+[Credits](#credits)
+
+[License](#license)
+
+[Badges](#badges)
+
+[Contributing](#contributing)
+
+[Deployment](#deployment)
+
+[Tests](#tests)
+
+[Questions](#questions)
+
+## Installation
+
+Node.js
+
+## Usage
+
+It will used thru the command line
+
+## Credits
+
+Daniel Sosa
+
+### License
+
+## MIT License
+
+## Badges
+
+![PyPi license](https://badgen.net/pypi/license/pip/)
+
+## Contributing
+
+None
+
+##Deployment
+
+https://sosadaniel12.github.io/theWorkDayPlanner/
+
+## Test
+
+None
+
+## Questions
+
+- GitHub
+
+sosadaniel12
+
+https://github.com/sosadaniel12
+
+- Email
+
+danielsosa2121@gmail.com
